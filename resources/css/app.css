@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.destroy_modal {
+    animation: 2.5s linear animate-modal;
+}
+@keyframes animate-modal {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
