@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\home\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('products/{id}')->name('product');
 
 Route::get('/account', function () {
     return view('account');
