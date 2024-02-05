@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('products/{id}')->name('product');
+Route::get('products/{id}', [HomeController::class, 'show'])->name('product');
 
 Route::get('/account', function () {
     return view('account');

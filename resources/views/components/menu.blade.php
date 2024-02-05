@@ -5,7 +5,7 @@
         @foreach($categories as $category)
             <li class="flex items-center w-10 gap-6">
                 <img class="w-5" src="{{asset($category['icon_path'])}}">
-                    <a class="p-2 text-xl hover:bg-gray-700 hover:rounded-md" href="{{asset('/')}}">{{$category['name']}}
+                    <a class="{{$category['id'] == $categoryProduct['id'] ? 'border-b-2 rounded' : null}} p-2 text-xl hover:bg-gray-700 hover:rounded-md" href="{{asset('/')}}">{{$category['name']}}
                 </a>
             </li>
         @endforeach

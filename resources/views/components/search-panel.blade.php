@@ -6,7 +6,7 @@
             <li class="hover:bg-gray-900 p-2 rounded-lg"><a class="" href="{{asset('/')}}">Stock</a></li>
         </ul>
     <div class="flex justify-center items-center">
-        <input class="h-8 w-96 rounded-l-full outline-none pl-3" placeholder="search" type="text" name="search" id="search">
+        <input class="h-8 w-96 rounded-l-full border-none outline-none pl-3" placeholder="search" type="text" name="search" id="search">
         <button class="rounded-r-full bg-yellow-400 h-8 px-4">send</button>
     </div>
 </div>

@@ -23,9 +23,9 @@
         }
     </style>
 </head>
-<body class="bg-gray-700">
+<body class="bg-gray-700 h-screen flex flex-col justify-between">
         @yield('header')
-        <div class="max-w-screen-xl mx-auto border-l-2 border-gray-900 flex justify-between">
+        <div class="max-w-screen-xl mx-auto my-0 border-l-2 border-gray-900 flex justify-between">
             @yield('nav')
             @yield('main')
             @yield('post-block')
