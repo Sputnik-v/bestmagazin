@@ -18,6 +18,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('products/{id}', [HomeController::class, 'show'])->name('product');
 
+
+Route::get('television', [HomeController::class, 'showForCategory'])->name('televisions');
+
+Route::get('boiling', [HomeController::class, 'showForCategory'])->name('boiling');
+
+Route::get('phones', [HomeController::class, 'showForCategory'])->name('phones');
+
+Route::get('vacuums', [HomeController::class, 'showForCategory'])->name('vacuums');
+
+Route::get('refrigerators', [HomeController::class, 'showForCategory'])->name('refrigerators');
+
+Route::get('photographs', [HomeController::class, 'showForCategory'])->name('photographs');
+
+Route::get('headphones', [HomeController::class, 'showForCategory'])->name('headphones');
+
 Route::get('/account', function () {
     return view('account');
 })->middleware(['auth', 'verified'])->name('account');
